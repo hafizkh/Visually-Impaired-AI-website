@@ -1,5 +1,5 @@
 import React from 'react';
-import AccessibleForm from './AccessibleForm';
+import AccessibleForm from '../components/AccessibleForm';
 
 const Contact = () => {
     return (
