@@ -7,6 +7,7 @@ import Footer from './src/components/Footer';
 import Home from './src/Pages/Home';
 import About from './src/Pages/About';
 import Contact from './src/Pages/Contact';
+import PageNotFound from './src/Pages/PageNotFound';
 
 const App = () => {
     return (
@@ -18,6 +19,7 @@ const App = () => {
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/*" element={<PageNotFound />} />
                 </Routes>
                 <Footer />
             </div>
