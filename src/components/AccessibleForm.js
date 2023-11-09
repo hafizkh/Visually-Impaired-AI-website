@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { style } from '../utils/constants';
 
 const AccessibleForm = () => {
     const [formData, setFormData] = useState({
@@ -60,6 +61,7 @@ const AccessibleForm = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
+                style={style}
                 aria-label="Message"
                 required
             ></textarea>
