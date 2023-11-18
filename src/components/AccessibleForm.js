@@ -5,6 +5,9 @@ const AccessibleForm = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
+        gender: 'male',
+        country: 'select',
+        dob: '',
         message: '',
     });
 
@@ -17,16 +20,13 @@ const AccessibleForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        // Backend code for sending the data into DB
-
-        // For now, let's log the data to the console
         console.log('Form submitted:', formData);
-
-        // Clear the form fields after submission
         setFormData({
             name: '',
             email: '',
+            gender: 'male',
+            country: 'select',
+            dob: '',
             message: '',
         });
     };
@@ -52,6 +52,58 @@ const AccessibleForm = () => {
                 value={formData.email}
                 onChange={handleChange}
                 aria-label="Email"
+                required
+            />
+
+            <label htmlFor="gender">Gender:</label>
+            <div>
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="male"
+                        checked={formData.gender === 'male'}
+                        onChange={handleChange}
+                    />{' '}
+                    Male
+                </label>
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="female"
+                        checked={formData.gender === 'female'}
+                        onChange={handleChange}
+                    />{' '}
+                    Female
+                </label>
+            </div>
+
+            <label htmlFor="country">Country:</label>
+            <select
+                id="country"
+                name="country"
+                value={formData.country}
+                onChange={handleChange}
+                aria-label="Country"
+                required
+            >
+                <option value="select" disabled>
+                    Select Country
+                </option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                {/* Add more countries as needed */}
+            </select>
+
+            <label htmlFor="dob">Date of Birth:</label>
+            <input
+                type="date"
+                id="dob"
+                name="dob"
+                value={formData.dob}
+                onChange={handleChange}
+                aria-label="Date of Birth"
                 required
             />
 
