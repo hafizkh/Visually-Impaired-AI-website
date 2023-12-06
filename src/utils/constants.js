@@ -29,7 +29,8 @@ export const Aboutstyles = {
         marginBottom: '20px',
     },
     text: {
-        width: '50%', // Adjust the width of the text
+        width: '50%',
+        textAlign: 'justify',
     },
     heading: {
         fontSize: '2em',
