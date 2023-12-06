@@ -117,7 +117,6 @@ const AccessibleForm = () => {
                 aria-label="Message"
                 required
             ></textarea>
-
             <button type="submit">Submit</button>
         </form>
     );
