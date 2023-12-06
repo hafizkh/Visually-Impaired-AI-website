@@ -3,8 +3,8 @@ import React from 'react';
 const Header = () => {
     return (
         <header>
-            <h1>Accessible Website for All</h1>
-            <p>Creating Inclusive Experiences</p>
+            <h1>Welcome to Digital Solutions Hub</h1>
+            <p>Your Partner in Innovation</p>
         </header>
     );
 };

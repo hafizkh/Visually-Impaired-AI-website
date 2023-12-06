@@ -10,7 +10,7 @@ const PageNotFound = () => {
 
     return (
         <div className="not-found-page">
-            <h1>404 Page Not Found</h1>
+            <h2>404 Page Not Found</h2>
             <img className='image' src={notFoundPage} alt="404 error image" />
             <p>The page you requested could not be found.</p>
             <button onClick={navigateToHome}>Home</button>
