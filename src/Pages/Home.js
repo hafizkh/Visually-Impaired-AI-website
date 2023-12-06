@@ -27,7 +27,6 @@ const Home = () => {
                 <div style={Homestyles.imageDescription}>
                     <img src={homeImage2} alt="People are walking in the street" style={Homestyles.image} />
                     <div style={Aboutstyles.text}>
-                        <h2>Hello</h2>
                         <p>
                             Explore innovative possibilities for growth and efficiency with
                             our digital expertise. From concept to execution, we empower
